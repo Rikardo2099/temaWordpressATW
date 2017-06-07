@@ -17,8 +17,22 @@ get_header(); ?>
 
 				<?php the_content(); ?>
 
-                <img src="<?php the_field('imagen_1'); ?>">
-                <img src="<?php the_field('imagen_2'); ?>">
+                <?php
+                    $imagen = get_field('imagen_1');
+                    $size = 'mediano';
+
+                        if ($imagen) {
+                            echo wp_get_attachment_image( $imagen, $size);
+                        }
+                ?>
+                <?php
+                    $imagen = get_field('imagen_2');
+                    $size = 'mediano';
+
+                        if ($imagen) {
+                            echo wp_get_attachment_image( $imagen, $size);
+                        }
+                ?>
 
 				<br class="clear">
 
