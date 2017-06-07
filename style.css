@@ -120,7 +120,7 @@ input:focus {
 }
 .nav ul li{
     float: left;
-    padding: 0 25px;
+    padding: 0 15px;
     height: 100%;
     line-height: 73px;
 }
@@ -128,7 +128,7 @@ input:focus {
     background-color: #df7900;
 }
 .nav ul li a{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
